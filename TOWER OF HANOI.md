@@ -1,44 +1,41 @@
-# Exp.No:35  
-## TOWER OF HANOI
+Exp.No:31
+IMPLEMENTATION OF STACK
+AIM
+To write a Python program to implement a stack using a list and its built-in methods (append(), pop()).
 
----
+ALGORITHM
+Start the program.
+Define a class st with the following methods:
+push(self, num): Adds the number num to the stack.
+pop(self): Removes and returns the top element from the stack.
+Create a stack object s using the class st.
+Input the stack size: Take an integer input size to define the size of the stack.
+Loop through numbers from 1 to size: Add only the odd numbers to the stack using the push() method.
+Display the elements in the stack after the loop completes.
+Call pop() to remove the top element from the stack and display the popped element.
+Display the stack again to show the remaining elements.
+End the program.
+PROGRAM
+```
+stack = []
+for i in range(5):
+    a=input()
+    stack.append(a)
 
-### AIM  
-To write a Python program to implement **Tower of Hanoi** and display all the moves of the disks using a recursive function.  
-Consider the names of the tower pegs as A, B, C. Get the number of disks value from the user.
+print('Stack before elements are popped')
+print(stack)
 
----
+for i in range(2):
+    stack.pop()
 
-### ALGORITHM  
 
-1. **Start the program.**
-2. **Input** the number of disks `n`.
-3. **Print** the number of disks.
-4. Define a **recursive function** `TowerOfHanoi(n, source, destination, auxiliary)`:
-   - If `n == 1`:
-     - Print: "Move disk from source to destination".
-   - Else:
-     - Call `TowerOfHanoi(n - 1, source, auxiliary, destination)`  
-       → Move `n-1` disks from source to auxiliary using destination as helper.
-     - Print: "Move disk from source to destination"  
-       → Move the largest disk to the destination.
-     - Call `TowerOfHanoi(n - 1, auxiliary, destination, source)`  
-       → Move `n-1` disks from auxiliary to destination using source as helper.
-5. Call `TowerOfHanoi(n, 'A', 'C', 'B')` to start the process.
-6. **End the program.**
-
----
-
-### PROGRAM  
+print('\nStack after elements are popped:')
+print(stack)
 
 ```
+OUTPUT
+![image](https://github.com/user-attachments/assets/35203373-578c-4dc9-8790-f5fd341e5c59)
 
 
-```
-
-### OUTPUT
-
-
-
-### RESULT
-
+RESULT
+Thus the python program was initiated and executed successfully.
