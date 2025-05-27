@@ -4,7 +4,7 @@
 ---
 
 ### AIM  
-To write a Python program to implement a stack using a list and its built-in methods (`append()`, `pop()`).
+To implement a stack using Python list and perform push, pop, and peek operations using the built-in methods append() and pop().
 
 ---
 
