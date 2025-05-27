@@ -32,6 +32,27 @@ To write a Python program to evaluate a user-given Postfix expression that conta
 ### PROGRAM
 
 ```
+OPERATORS=set(['*','+']) 
+
+def evaluate_postfix(expression):
+    stack=[]
+    for i in expression:
+        if i not in OPERATORS:
+            stack.append(i)
+        else:
+            a=stack.pop()
+            b=stack.pop()
+            if i=='+':
+                res=int(a)+int(b)
+            elif i=='*':
+                res=int(a)*int(b)
+            stack.append(res)
+    return stack[0]
+    
+    
+expression = input()
+print("postfix expression: ",expression)
+print("Evaluation result: ",evaluate_postfix(expression))
 
 
 ```
