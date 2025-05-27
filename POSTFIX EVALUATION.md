@@ -59,6 +59,9 @@ print("Evaluation result: ",evaluate_postfix(expression))
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/37745300-7dcc-4094-b071-5b8b89f15fec)
+
 
 ### RESULT
 
+Thus the python program was initiated and executed successfully.
